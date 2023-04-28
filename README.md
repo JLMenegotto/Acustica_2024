@@ -5,7 +5,7 @@
 Acustica2024.dll é um aplicativo para Revit v.2024 desenvolvido no Departamento de Expressão Gráfica da Escola Politécnica da UFRJ pelo Prof. José Luis Menegotto.
 O objetivo da API é fazer interface com o simulador sonoro BRASS desenvolvido pelo Prof. Julio Cesar Boscher Torres.
 
-# Função:
+# Função da API:
 A API gera um arquivo com os raios sonoros que partem de uma fonte omnidirecional e são recebidos numa posição definida pelo usuário (cabeça).
 O processo gera 3 arquivos.
 
@@ -18,7 +18,6 @@ O processo gera 3 arquivos.
 
  1. Descompactar para a pasta                         C:\APIBIM\Acustica
  2. Copiar o arquivo 2024_Acustica.addin para a pasta C:\ProgramData\Autodesk\Revit\Addins\2024
-
            
 # Preparação do Modelo:
 
@@ -31,7 +30,8 @@ Exemplo:
 
 A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto
 
-![Materiais](https://user-images.githubusercontent.com/9437020/235123490-3a9218a3-0307-4000-a9c6-04cb5f5a7c7f.PNG)
+![Materiais](https://user-images.githubusercontent.com/9437020/235194809-edbf0873-caee-476c-9103-f7472fd9e6cd.PNG)
+
 
  2. A API processa as faces atingidas pelos raios. Foram testadas as familias de sistema de Piso, Parede, Forros, Partes que podem estar agrupadas. 
  3. As famílias de componentes que estejam dentro da sala estudada (cadeiras, refletores ou baffles acústicos, etc.) devem ter um parâmetro instanciado 
