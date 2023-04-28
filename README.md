@@ -34,7 +34,8 @@ A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto
 ![Materiais](https://user-images.githubusercontent.com/9437020/235123490-3a9218a3-0307-4000-a9c6-04cb5f5a7c7f.PNG)
 
  2. A API processa as faces atingidas pelos raios. Foram testadas as familias de sistema de Piso, Parede, Forros, Partes que podem estar agrupadas. 
- 3. As famílias de componentes (cadeiras, paineis, etc.) devem ter um parâmetro Material_Acustico para incorporar o material. 
+ 3. As famílias de componentes que estejam dentro da sala estudada (cadeiras, refletores ou baffles acústicos, etc.) devem ter um parâmetro instanciado 
+    definido como "Material_Acustico" para alocar o valor de material. 
 
 ![Familia](https://user-images.githubusercontent.com/9437020/235192990-612e1f3e-1af5-45c0-befa-a70cbd703047.PNG)
 
@@ -50,7 +51,6 @@ A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto
  5. Na linha de Status de Revit serão informadas as interações processadas. Os raios desenhados utilizam a cor amarela que vai sendo clareada e afinada segundo as perdas de energia de cada reflexão. Foi preparada uma gradação de 5 níveis com cor e espessuras de linha diferenciadas.
 
 ![contador](https://user-images.githubusercontent.com/9437020/235193199-33ac6d83-b916-4ef3-aa39-495c9d87b74e.png)
-
 
 # Estilos:
 
