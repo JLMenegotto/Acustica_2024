@@ -64,5 +64,5 @@ A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto
 Como os processos de audibilização exigem grande quantidade de raios a serem processados, isso tem um impacto de processamento gráfico em Revit. O usuário pode optar gerar os arquivos necessários para o BRASS sem ter que desenhar os raios no modelo.
 2. Na tabela a seguir os tempos de procesamento sem desenhar os raios
 
-![tempos](https://user-images.githubusercontent.com/9437020/235193060-c2484104-8b31-4ed3-93a2-ec4d4c441d72.PNG)
+![tempos](https://user-images.githubusercontent.com/9437020/235225832-aa937647-636d-4791-9c3e-87f54ff0b812.PNG)
 
