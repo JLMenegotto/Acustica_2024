@@ -12,13 +12,15 @@ O processo gera 3 arquivos.
 1. Campo_Acustico.JSON:        Arquivo estruturado em JSON com os dados do campo acústico com todos os raios calculados.
 2. RAYS-S001-R001.TXT:         Arquivo com os raios que passam pela posição da cabeça, ou seja, os raios que tem influência na audição de um ouvinte.
 3. Gera_Wave_SalaSimulada.BAT: Arquivo Bat para executar o BRASS e fazer o cálculo de audibilização da sala com os dados do RAYS-S001-R001.TXT.
-                               O retorno do processo são arquivos WAV com o resultado da audibilização.
-                               
+                               O retorno do processo são arquivos WAV com o resultado da audibilização.                      
 # Instalação:
 
  1. Descompactar para a pasta                         C:\APIBIM\Acustica
- 2. Copiar o arquivo 2024_Acustica.addin para a pasta C:\ProgramData\Autodesk\Revit\Addins\2024
-           
+ 3. Copiar o arquivo 2024_Acustica.addin para a pasta C:\ProgramData\Autodesk\Revit\Addins\2024
+ 
+ 3. Entre os arquivos instalados na pasta Brass, há um arquivo soprano.wav. Esse arquivo é o som anecóico de uma soprano cantando uma escala de alturas. 
+    O arquivo Wav resultante da simulação da API e da audibilização calculada no Brass, retornará a mesma sequência cantada com o efeito acústico da sala. 
+
 # Preparação do Modelo:
 
  1. Os materiais devem ter o parâmetro MARK definido e cadastrado no arquivo Acustica_Coeficientes.TXT
@@ -38,7 +40,6 @@ A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto
     definido como "Material_Acustico" para alocar o valor de material. 
 
 ![Familia](https://user-images.githubusercontent.com/9437020/235192990-612e1f3e-1af5-45c0-befa-a70cbd703047.PNG)
-
   
 # Interface:
  1. Botão de executar o processo de traçado de raios.
@@ -61,7 +62,7 @@ A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto
 # Desempenho:
 
 1. Os valores de processamento a seguir foram obtidos rodando a API em um notebook Inspiron com processador I7, 8GB de RAM e disco SSD 1T com placa de video Onboard.
-Como os processos de audibilização exigem grande quantidade de raios a serem processados, isso tem um impacto de processamento gráfico em Revit. O usuário pode optar gerar os arquivos necessários para o BRASS sem ter que desenhar os raios no modelo.
+Como os processos de audibilização exigem grande quantidade de raios a serem processados, isso tem um impacto de processamento gráfico em Revit. O usuário pode optar por gerar os arquivos necessários para o BRASS sem precisar desenhar os raios no modelo.
 2. Na tabela a seguir os tempos de procesamento sem desenhar os raios
 
 ![tempos](https://user-images.githubusercontent.com/9437020/235225832-aa937647-636d-4791-9c3e-87f54ff0b812.PNG)
