@@ -36,7 +36,7 @@ A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto
  2. A API processa as faces atingidas pelos raios. Foram testadas as familias de sistema de Piso, Parede, Forros, Partes que podem estar agrupadas. 
  3. As famílias de componentes (cadeiras, paineis, etc.) devem ter um parâmetro Material_Acustico para incorporar o material. 
 
-![Familia](https://user-images.githubusercontent.com/9437020/235178942-96eb3604-a98d-4d38-ab37-fbfcbceee465.PNG)
+![Familia](https://user-images.githubusercontent.com/9437020/235192990-612e1f3e-1af5-45c0-befa-a70cbd703047.PNG)
 
   
 # Interface:
@@ -44,9 +44,13 @@ A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto
  2. Botão para a leitura do campo acústico. (Em desenvolvimento...).
  3. Opções para desenhar ou não os raios calculados.
  4. Quantidade de raios e quantidade de reflexões a calcular (Ingressar o valor e Pressionar Enter ou clicar no ícone do enter do campo).
- 5. Na linha de Status de Revit serão informadas as interações processadas. Os raios desenhados utilizam a cor amarela que vai sendo clareada e afinada segundo as perdas de energia de cada reflexão. Foi preparada uma gradação de 5 níveis com cor e espessuras de linha diferenciadas.
 
 ![Interface](https://user-images.githubusercontent.com/9437020/235127905-42c1eeeb-3225-4337-9e11-fd8732b48068.PNG)
+
+ 5. Na linha de Status de Revit serão informadas as interações processadas. Os raios desenhados utilizam a cor amarela que vai sendo clareada e afinada segundo as perdas de energia de cada reflexão. Foi preparada uma gradação de 5 níveis com cor e espessuras de linha diferenciadas.
+
+![contador](https://user-images.githubusercontent.com/9437020/235193199-33ac6d83-b916-4ef3-aa39-495c9d87b74e.png)
+
 
 # Estilos:
 
@@ -60,4 +64,5 @@ A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto
 Como os processos de audibilização exigem grande quantidade de raios a serem processados, isso tem um impacto de processamento gráfico em Revit. O usuário pode optar gerar os arquivos necessários para o BRASS sem ter que desenhar os raios no modelo.
 2. Na tabela a seguir os tempos de procesamento sem desenhar os raios
 
-![tempos](https://user-images.githubusercontent.com/9437020/235162322-5e836c51-bb60-49eb-988d-c65e713ca1e6.PNG)
+![tempos](https://user-images.githubusercontent.com/9437020/235193060-c2484104-8b31-4ed3-93a2-ec4d4c441d72.PNG)
+
