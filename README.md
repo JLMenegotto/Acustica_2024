@@ -33,6 +33,9 @@ A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto
 
 ![Materiais](https://user-images.githubusercontent.com/9437020/235123490-3a9218a3-0307-4000-a9c6-04cb5f5a7c7f.PNG)
 
+ 2. A API processa as faces atingidas pelos raios. Foram testadas as familias de sistema de Piso, Parede, Forros, Partes que podem estar agrupadas. 
+ 3. As famílias de componentes (cadeiras, paineis, etc.) devem ter um parâmetro Material_Acustico para incorporar o material. 
+ 
 # Interface:
  1. Botão de executar o processo de traçado de raios.
  2. Botão para a leitura do campo acústico. (Em desenvolvimento...).
