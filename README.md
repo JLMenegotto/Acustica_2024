@@ -9,17 +9,19 @@ O objetivo da API é fazer interface com o simulador sonoro BRASS desenvolvido p
 A API gera um arquivo com os raios sonoros que partem de uma fonte omnidirecional e são recebidos numa posição definida pelo usuário (cabeça).
 O processo gera 3 arquivos.
 
-1. Campo_Acustico.JSON:        Arquivo estruturado em JSON com os dados do campo acústico com todos os raios calculados.
-2. RAYS-S001-R001.TXT:         Arquivo com os raios que passam pela posição da cabeça, ou seja, os raios que tem influência na audição de um ouvinte.
-3. Gera_Wave_SalaSimulada.BAT: Arquivo Bat para executar o BRASS e fazer o cálculo de audibilização da sala com os dados do RAYS-S001-R001.TXT.
-                               O retorno do processo são arquivos WAV com o resultado da audibilização.                      
+1. Campo_Acustico.JSON:        Arquivo estruturado em JSON com os dados do campo acústico com todos os raios sonoros que saíram da fonte e todas as reflexões                                          com as perdas de energia sonora calculadas.
+2. RAYS-S001-R001.TXT:         Arquivo com apenas os raios e reflexões que passaram pela posição da cabeça, ou seja, os raios que tem influência na audição de um                                      ouvinte posicionado no ponto da sala definido.
+3. Gera_Wave_SalaSimulada.BAT: Arquivo Bat para executar o BRASS e fazer a leitura e o cálculo de audibilização da sala a partir dos dados do arquivo 
+                               RAYS-S001-R001.TXT. O retorno do processo são arquivos WAV com o resultado da audibilização.
+                               
 # Instalação:
 
  1. Descompactar para a pasta                         C:\APIBIM\Acustica
  3. Copiar o arquivo 2024_Acustica.addin para a pasta C:\ProgramData\Autodesk\Revit\Addins\2024
  
- 3. Entre os arquivos instalados na pasta Brass, há um arquivo soprano.wav. Esse arquivo é o som anecóico de uma soprano cantando uma escala de alturas. 
-    O arquivo Wav resultante da simulação da API e da audibilização calculada no Brass, retornará a mesma sequência cantada com o efeito acústico da sala. 
+ 3. Entre os arquivos instalados na pasta Brass, há um arquivo soprano.wav. Esse arquivo é o som anecóico de uma soprano realizando um exercício vocal com uma 
+    escala de alturas. O arquivo Wav resultante da simulação da API e da audibilização calculada no Brass, retornará a mesma sequência cantada com a resposta 
+    acústica da sala. 
 
 # Preparação do Modelo:
 
