@@ -34,10 +34,9 @@ A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto
 
 ![Materiais](https://user-images.githubusercontent.com/9437020/235194809-edbf0873-caee-476c-9103-f7472fd9e6cd.PNG)
 
-
  2. A API processa as faces atingidas pelos raios. Foram testadas as familias de sistema de Piso, Parede, Forros, Partes que podem estar agrupadas. 
  3. As famílias de componentes que estejam dentro da sala estudada (cadeiras, refletores ou baffles acústicos, etc.) devem ter um parâmetro instanciado 
-    definido como "Material_Acustico" para alocar o valor de material. 
+    definido como "Material_Acustico" que permita alocar o material utilizado.
 
 ![Familia](https://user-images.githubusercontent.com/9437020/235192990-612e1f3e-1af5-45c0-befa-a70cbd703047.PNG)
   
@@ -62,9 +61,8 @@ A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto
 # Desempenho:
 
 1. Os valores de processamento a seguir foram obtidos rodando a API em um notebook Inspiron com processador I7, 8GB de RAM e disco SSD 1T com placa de video Onboard.
-Como os processos de audibilização exigem grande quantidade de raios a serem processados, isso tem um impacto de processamento gráfico em Revit. O usuário pode optar por gerar os arquivos necessários para o BRASS sem precisar desenhar os raios no modelo.
+Como os processos de audibilização exigem grande quantidade de raios a serem processados, há um impacto para o processamento gráfico em Revit. 
+A API permite optar por gerar os arquivos necessários para o BRASS sem precisar desenhar os raios no modelo.
 2. Na tabela a seguir os tempos de procesamento sem desenhar os raios
 
 ![tempos](https://user-images.githubusercontent.com/9437020/235238074-9609ee4f-8a13-4eed-b684-a295099974db.PNG)
-
-
