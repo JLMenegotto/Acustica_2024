@@ -70,5 +70,6 @@ A API permite optar por gerar os arquivos necessários para o BRASS sem precisar
 ![tempos](https://user-images.githubusercontent.com/9437020/235238074-9609ee4f-8a13-4eed-b684-a295099974db.PNG)
 
 # Publicação:
+Para aprofundar no assunto consulte a seguinte publicação.
 
 https://periodicos.sbu.unicamp.br/ojs/index.php/parc/article/view/8653934
