@@ -68,3 +68,7 @@ A API permite optar por gerar os arquivos necessários para o BRASS sem precisar
 2. Na tabela a seguir os tempos de procesamento sem desenhar os raios
 
 ![tempos](https://user-images.githubusercontent.com/9437020/235238074-9609ee4f-8a13-4eed-b684-a295099974db.PNG)
+
+# Publicação:
+
+https://periodicos.sbu.unicamp.br/ojs/index.php/parc/article/view/8653934
