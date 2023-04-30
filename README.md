@@ -10,7 +10,7 @@ Eles são recebidos numa posição definida pelo usuário (cabeça). O processo 
 
 1. RAYS-S001-R001.JSON:        Arquivo estruturado em JSON com os dados do campo acústico da sala, ou seja, com todos os raios sonoros que saíram da fonte e todas as                                  reflexões com as perdas de energia sonora calculadas para nove bandas de frequência (63, 125, 250, 500, 1K, 2K, 4K, 8K, 16K).
 2. RAYS-S001-R001.TXT:         Arquivo que contem apenas os raios e reflexões que passaram pela posição da cabeça, ou seja, os raios que têm influência na percepção 
-3.                             acústica de um ouvinte posicionado no ponto da sala definido.
+                               acústica de um ouvinte posicionado no ponto da sala definido.
 4. Sala-S001-R001.BAT:         Arquivo Bat para executar o BRASS e fazer a leitura e o cálculo de audibilização da sala a partir dos dados do arquivo 
                                RAYS-S001-R001.TXT. O retorno do processo são arquivos WAV com o resultado da audibilização.
 4. Sala-S001-R001.TXT:         Arquivo TXT com parâmetros necessários para o BRASS realizar o processo de audibilização da sala.
