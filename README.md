@@ -9,10 +9,11 @@ O objetivo da API é fazer interface com o simulador sonoro BRASS desenvolvido p
 A API gera um arquivo com os raios sonoros que partem de uma fonte omnidirecional e são recebidos numa posição definida pelo usuário (cabeça).
 O processo gera 3 arquivos.
 
-1. Campo_Acustico.JSON:        Arquivo estruturado em JSON com os dados do campo acústico com todos os raios sonoros que saíram da fonte e todas as reflexões                                          com as perdas de energia sonora calculadas.
+1. RAYS-S001-R001.JSON:        Arquivo estruturado em JSON com os dados do campo acústico com todos os raios sonoros que saíram da fonte e todas as reflexões                                          com as perdas de energia sonora calculadas.
 2. RAYS-S001-R001.TXT:         Arquivo com apenas os raios e reflexões que passaram pela posição da cabeça, ou seja, os raios que tem influência na audição de um                                      ouvinte posicionado no ponto da sala definido.
-3. Gera_Wave_SalaSimulada.BAT: Arquivo Bat para executar o BRASS e fazer a leitura e o cálculo de audibilização da sala a partir dos dados do arquivo 
+3. Sala-S001-R001.BAT:         Arquivo Bat para executar o BRASS e fazer a leitura e o cálculo de audibilização da sala a partir dos dados do arquivo 
                                RAYS-S001-R001.TXT. O retorno do processo são arquivos WAV com o resultado da audibilização.
+4. Sala-S001-R001.TXT:         Arquivo TXT com os parâmetros necessários para BRASS realizar o processo de audibilização da sala. 
                                
 # Instalação:
 
@@ -44,9 +45,13 @@ A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto
   
 # Interface:
  1. Botão de executar o processo de traçado de raios.
- 2. Botão para a leitura do campo acústico. (Em desenvolvimento...).
+ 2. Botão para a leitura do campo acústico (Em desenvolvimento...).
  3. Opções para desenhar ou não os raios calculados.
- 4. Quantidade de raios e quantidade de reflexões a calcular (Ingressar o valor e Pressionar Enter ou clicar no ícone do enter do campo).
+ 4. Quantidade de raios a calcular.
+ 5. Quantidade de reflexões a calcular.
+ 6. Número da simulação. Será o valor N (RAYS-S00N-R00N.JSON) para nomear os arquivos de JSON, TXT e BAT de cada simulação.
+
+Para os campos 4,5 e 6 Ingressar o valor e Pressionar Enter ou clicar no ícone do enter do campo.
 
 ![Interface](https://user-images.githubusercontent.com/9437020/235352580-44726e4d-9f58-4e51-867b-8c1738b936bd.PNG)
 
