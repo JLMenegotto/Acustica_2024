@@ -48,7 +48,7 @@ A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto
  3. Opções para desenhar ou não os raios calculados.
  4. Quantidade de raios e quantidade de reflexões a calcular (Ingressar o valor e Pressionar Enter ou clicar no ícone do enter do campo).
 
-![Interface](https://user-images.githubusercontent.com/9437020/235127905-42c1eeeb-3225-4337-9e11-fd8732b48068.PNG)
+![Interface](https://user-images.githubusercontent.com/9437020/235352580-44726e4d-9f58-4e51-867b-8c1738b936bd.PNG)
 
  5. Na linha de Status de Revit serão informadas as interações processadas. Os raios desenhados utilizam a cor amarela que vai sendo clareada e afinada segundo as perdas de energia de cada reflexão. Foi preparada uma gradação de 5 níveis com cor e espessuras de linha diferenciadas.
 
