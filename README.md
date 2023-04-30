@@ -1,11 +1,10 @@
 # Acústica 2024
 
+Acustica2024.dll é um aplicativo para Revit v.2024 desenvolvido no Departamento de Expressão Gráfica da Escola Politécnica da UFRJ pelo Prof. José Luis Menegotto. O objetivo da API é fazer interface com o simulador sonoro BRASS desenvolvido pelo Prof. Julio Cesar Boscher Torres.
+
 ![RAIOS6000](https://user-images.githubusercontent.com/9437020/235116960-2306a9f9-e3fb-4e65-9eb4-82d0fb5b5e5c.PNG)
 
-Acustica2024.dll é um aplicativo para Revit v.2024 desenvolvido no Departamento de Expressão Gráfica da Escola Politécnica da UFRJ pelo Prof. José Luis Menegotto.
-O objetivo da API é fazer interface com o simulador sonoro BRASS desenvolvido pelo Prof. Julio Cesar Boscher Torres.
-
-# Função da API:
+# Funcionalidade da API:
 A API gera um arquivo com os raios sonoros que partem de uma fonte omnidirecional e são recebidos numa posição definida pelo usuário (cabeça).
 O processo gera 3 arquivos.
 
