@@ -58,7 +58,8 @@ Exemplo:  A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto
 
 Para os campos 4,5 e 6 Ingressar o valor e Pressionar Enter ou clicar no ícone do enter do campo.
 
- 5. Na linha de Status de Revit serão informadas as interações processadas. Os raios desenhados utilizam a cor amarela que vai sendo clareada e afinada segundo as perdas de energia de cada reflexão. Foi preparada uma gradação de 5 níveis com cor e espessuras de linha diferenciadas.
+ 5. Na linha de Status de Revit serão informadas as interações processadas. Os raios desenhados utilizam a cor amarela que vai sendo clareada e afinada segundo as perdas de energia de cada reflexão. 
+ Foi preparada uma gradação de 5 níveis deferenciados de cor e espessura de linha.
 
 ![contador](https://user-images.githubusercontent.com/9437020/235193199-33ac6d83-b916-4ef3-aa39-495c9d87b74e.png)
 
@@ -76,7 +77,7 @@ A API permite optar por gerar os arquivos necessários para o BRASS sem precisar
 ![tempos](https://user-images.githubusercontent.com/9437020/235238074-9609ee4f-8a13-4eed-b684-a295099974db.PNG)
 
 ## Limitações:
-1. Nesta versão, o usuário pode posicionar a fonte e a cabeça livremente no plano XY, mas as suas alturas foram definidas em 1.20 m e 1.80 m respectivamente.
+1. Nesta versão, o usuário pode posicionar a fonte e a cabeça livremente no plano XY, mas as alturas foram definidas em 1.20m e 1.80m respectivamente.
 2. O aplicativo deve ser rodado numa vista 3D de Revit.
 
 ## Publicação:
