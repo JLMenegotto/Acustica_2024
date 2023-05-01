@@ -75,7 +75,7 @@ A API permite optar por gerar os arquivos necessários para o BRASS sem precisar
 ![tempos](https://user-images.githubusercontent.com/9437020/235238074-9609ee4f-8a13-4eed-b684-a295099974db.PNG)
 
 ## Limitações:
-1. Nesta versão, a altura da fonte e da cabeça foram definidas a 1.20 m e 1.80 m respectivamente.
+1. Nesta versão, o usuário pode posicionar a fonte e a cabeça livremente no plano XY, mas as suas alturas foram definidas em 1.20 m e 1.80 m respectivamente.
 2. O aplicativo deve ser rodado numa vista 3D de Revit.
 
 ## Publicação:
