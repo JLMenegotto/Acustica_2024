@@ -54,7 +54,7 @@ Exemplo:  A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto
  3. Opções para desenhar ou não os raios calculados.
  4. Quantidade de raios a calcular.
  5. Quantidade de reflexões a calcular.
- 6. Número da fonte sonora utilizada, (valor N em rgb(255,0,0)RAYS-S00**N**-R001)rgb(0,0,0). Utilizado para nomear e diferenciar os arquivos JSON e TXT com os raios que partem de cada fonte sonora.
+ 6. Número da fonte sonora utilizada, (valor N em `RAYS-S00**N**-R001)`. Utilizado para nomear e diferenciar os arquivos JSON e TXT com os raios que partem de cada fonte sonora.
 
 Para os campos 4,5 e 6 Ingressar o valor e Pressionar Enter ou clicar no ícone do enter do campo.
 
