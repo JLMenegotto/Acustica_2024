@@ -8,18 +8,25 @@ Acustica2024.dll é um aplicativo para Revit v.2024 desenvolvido no Departamento
 A API faz a leitura de um modelo BIM criado em Revit v. 2024 para gerar informações que o sistema BRASS precisa para gerar uma simulação sonora de salas. O processo inicia com o posicionamento de uma fonte sonora e um receptor (cabeça) para que seja efetuado uma operação de traçado de raios que partem de uma fonte sonora ideal e omnidirecional com enegia = 1. Os raios percorrem a sala refletindo nas superfícies e perdem energia de acordo aos coeficientes de absorção acústica dos materiais.
 Eles são recebidos numa posição definida pelo usuário (cabeça). O processo gera 4 arquivos:
 
-1. **RAYS-S001-R001.JSON:**     Arquivo estruturado em JSON com os dados do campo acústico da sala, ou seja, com todos os raios sonoros que saíram da fonte e todas as reflexões com as perdas de energia sonora calculadas para nove bandas de frequência (63, 125, 250, 500, 1K, 2K, 4K, 8K, 16K).
-2. **RAYS-S001-R001.TXT:**      Arquivo que contem apenas os raios e reflexões que passaram pela posição da cabeça, ou seja, os raios que têm influência na percepção acústica de um ouvinte posicionado no ponto da sala definido.
+1. **RAYS-S00N-R001.JSON:**     Arquivo estruturado em JSON com os dados do campo acústico da sala, ou seja, com todos os raios sonoros que saíram da fonte e todas as reflexões com as perdas de energia sonora calculadas para nove bandas de frequência (63, 125, 250, 500, 1K, 2K, 4K, 8K, 16K).
+2. **RAYS-S00N-R001.TXT:**      Arquivo que contem apenas os raios e reflexões que passaram pela posição da cabeça, ou seja, os raios que têm influência na percepção acústica de um ouvinte posicionado no ponto da sala definido.
 3. **NomeSala_Simulada.BAT:**   Arquivo Bat para executar o BRASS e fazer a leitura e o cálculo de audibilização da sala a partir dos dados do arquivo de raios (TXT) O retorno do processo são arquivos WAV com o resultado da audibilização.
 4. **NomeSala_Simulada.TXT:**   Arquivo TXT com parâmetros necessários para o BRASS realizar o processo de audibilização da sala.
                                
 ## Instalação:
  1. Descompactar para a pasta **C:\APIBIM\Acustica**
- 3. Copiar o arquivo 2024_Acustica.addin para a pasta **C:\ProgramData\Autodesk\Revit\Addins\2024**
+ 2. Copiar o arquivo 2024_Acustica.addin para a pasta **C:\ProgramData\Autodesk\Revit\Addins\2024**
+ 3. Na pasta **Som** há arquivos Waves Mono com sons anecóicos usados como base sonora para a realizar a audibilização em Brass com a resposta acústica da sala. O resultado será a criação de arquivos Wav estéreo independentes e combionados.
  
- 3. Entre os arquivos instalados na pasta Brass, há um arquivo soprano.wav. Esse arquivo é o som anecóico de uma soprano realizando um exercício vocal com uma 
-    escala de alturas. O arquivo Wav resultante da simulação da API e da audibilização calculada no Brass, retornará a mesma sequência cantada com a resposta 
-    acústica da sala. 
+      * Soprano.wav: soprano realizando um exercício vocal com uma escala de alturas. 
+      * Piano.wav:   tocando uma escala ascendente e descendente.
+      * Oboe.wav:    tocando uma escala ascendente e descendente.
+      
+      Exemplo de resultado:
+      
+      * S001-R001.WAV  (resultado da posição da fonte 1 usando o Piano) 
+      * S002-R001.WAV  (resultado da posição da fonte 2 usando o Oboé) 
+      * SALL-R001.WAV  a combinação do Piano e Oboé.
 
 ## Preparação do Modelo:
  1. A sala simulada deve ter um objeto ambiente inserido com o nome do compartimento definido, pois esse valor definirá o nome dos arquivos BAT e TXT. 
@@ -46,7 +53,7 @@ Exemplo:  A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto
  3. Opções para desenhar ou não os raios calculados.
  4. Quantidade de raios a calcular.
  5. Quantidade de reflexões a calcular.
- 6. Número da fonte sonora utilizada. Será o valor N (RAYS-S00**N**-R001.JSON) para nomear os arquivos JSON, TXT com os raios de cada simulação. 
+ 6. Número da fonte sonora utilizada, (valor N em RAYS-S00**N**-R001.JSON). Utilizado par nomear e diferencias os arquivos JSON, TXT com os raios que partem de cada fonte sonora.
 
 Para os campos 4,5 e 6 Ingressar o valor e Pressionar Enter ou clicar no ícone do enter do campo.
 
