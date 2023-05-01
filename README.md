@@ -15,8 +15,9 @@ Eles são recebidos numa posição definida pelo usuário (cabeça). O processo 
                                
 ## Instalação:
  1. Descompactar para a pasta **C:\APIBIM\Acustica**
- 2. Copiar o arquivo 2024_Acustica.addin para a pasta **C:\ProgramData\Autodesk\Revit\Addins\2024**
- 3. Na pasta **Som** há arquivos Waves Mono com sons anecóicos usados como base sonora para a realizar a audibilização em Brass com a resposta acústica da sala. O resultado será a criação de arquivos Wav estéreo independentes e combionados.
+ 2. Copiar o arquivo **2024_Acustica.addin** para a pasta **C:\ProgramData\Autodesk\Revit\Addins\2024**
+ 3. Na pasta **Som** há arquivos Waves Mono com sons anecóicos usados como base sonora para a realizar a audibilização em Brass com a resposta acústica da sala. 
+    O resultado será a criação de arquivos Wav estéreo independentes e combionados.
  
       * Soprano.wav: soprano realizando um exercício vocal com uma escala de alturas. 
       * Piano.wav:   tocando uma escala ascendente e descendente.
