@@ -19,8 +19,9 @@ A API faz a leitura de um modelo BIM criado em Revit v. 2024 para gerar informa�
     O resultado será a criação de arquivos Wav estéreo independentes e combionados.
  
       * Soprano.wav: soprano realizando um exercício vocal com uma escala de alturas. 
-      * Piano.wav:   tocando uma escala ascendente e descendente.
-      * Oboe.wav:    tocando uma escala ascendente e descendente.
+      * Piano1.wav:  tocando uma escala ascendente e descendente.
+      * Piano2.wav:  tocando uma escala descendente.
+      * Oboe1.wav:   tocando uma escala ascendente e descendente.
       
     Exemplo de resultado:
       
