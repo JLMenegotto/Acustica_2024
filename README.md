@@ -5,17 +5,17 @@ Acustica2024.dll é um aplicativo para Revit v.2024 desenvolvido no Departamento
 ![RAIOS6000](https://user-images.githubusercontent.com/9437020/235116960-2306a9f9-e3fb-4e65-9eb4-82d0fb5b5e5c.PNG)
 
 ## Funcionalidade da API:
-A API faz a leitura de um modelo BIM criado em Revit v. 2024 para gerar informações que o sistema BRASS precisa para gerar uma simulação sonora de salas. O processo inicia pelo posicionamento de uma fonte sonora e um receptor (cabeça). Partindo da fonte sonora omnidirecional, é efetuada uma operação de traçado de raios iniciados com com enegia = 1. Os raios percorrem a sala refletindo nas superfícies e perdendo energia de acordo aos coeficientes de absorção acústica dos materiais. A percepção sonora vai depender da posição definida para a cabeça. O processo gera 4 arquivos:
+A API faz a leitura de um modelo BIM criado em Revit v. 2024 para gerar informações que o sistema BRASS precisa para gerar a simulação sonora de salas (audibilização). O processo é iniciado pelo posicionamento de uma fonte sonora e um receptor (cabeça).É efetuada uma operação de traçado de raios que partem de uma fonte sonora omnidirecional com valor de enegia = 1. Os raios percorrem a sala refletindo nas superfícies e perdendo energia de acordo aos coeficientes de absorção acústica dos materiais que atingem. A percepção sonora vai depender da posição definida para a cabeça. O processo gera 4 arquivos:
 
 1. **RAYS-S00N-R001.JSON:**  Arquivo estruturado em JSON com os dados do campo acústico da sala, ou seja, com todos os raios sonoros que saíram da fonte e todas as reflexões com as perdas de energia sonora calculadas para nove bandas de frequência (63, 125, 250, 500, 1K, 2K, 4K, 8K, 16K).
-2. **RAYS-S00N-R001.TXT:**  Arquivo que contem apenas os raios e reflexões que passaram pela posição da cabeça, ou seja, os raios que têm influência na percepção acústica de um ouvinte posicionado no ponto da sala definido.
-3. **NomeSala_Simulada.BAT:**  Arquivo Bat para executar o BRASS e fazer a leitura e o cálculo de audibilização da sala a partir dos dados do arquivo de raios (TXT) O retorno do processo são arquivos WAV com o resultado da audibilização.
-4. **NomeSala_Simulada.TXT:**  Arquivo TXT com parâmetros necessários para o BRASS realizar o processo de audibilização da sala.
+2. **RAYS-S00N-R001.TXT:**  Arquivo que contem apenas os raios e reflexões que passaram pela posição da cabeça, ou seja, os raios que têm influência na percepção acústica de um ouvinte posicionado nesse ponto da sala.
+3. **NomeSala_Simulada.BAT:**  Arquivo Bat para executar o BRASS e fazer a leitura e o cálculo de audibilização a partir dos dados fornecidos pelo arquivo de raios (TXT). O retorno do processo são arquivos WAV com o resultado da audibilização.
+4. **NomeSala_Simulada.TXT:**  Arquivo TXT com outros parâmetros necessários para o BRASS realizar o processo de audibilização.
                                
 ## Instalação:
  1. Descompactar para a pasta **C:\APIBIM\Acustica**
  2. Copiar o arquivo **2024_Acustica.addin** para a pasta **C:\ProgramData\Autodesk\Revit\Addins\2024**
- 3. Na pasta **Som** há arquivos Waves Mono com sons anecóicos usados como base sonora para a realizar a audibilização em Brass com a resposta acústica da sala. 
+ 3. Na pasta **Som** há arquivos Waves Mono com sons anecóicos usados como base sonora para a realizar a audibilização em Brass. 
     O resultado será a criação de arquivos Wav estéreo independentes e combionados.
  
       * Soprano.wav: soprano realizando um exercício vocal com uma escala de alturas. 
@@ -26,9 +26,9 @@ A API faz a leitura de um modelo BIM criado em Revit v. 2024 para gerar informa�
       
       * S001-R001.WAV  (resultado da posição da fonte 1 usando o Piano) 
       * S002-R001.WAV  (resultado da posição da fonte 2 usando o Oboé) 
-      * SALL-R001.WAV  a combinação do Piano e Oboé.
+      * SALL-R001.WAV  a combinação da fonte 1 e 2 com Piano e Oboé.
 
-## Preparação do Modelo:
+## Preparação do Modelo em Revit:
  1. A sala simulada deve ter um objeto ambiente inserido com o nome do compartimento definido, pois esse valor definirá o nome dos arquivos BAT e TXT. 
  2. Os materiais devem ter o parâmetro MARK definido e cadastrado no arquivo Acustica_Coeficientes.TXT.
  Esse arquivo contem os valores dos coeficientes de absorção acústica dos materiais usados na sala divididos em 9 bandas de frequência.
