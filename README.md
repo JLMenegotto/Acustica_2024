@@ -73,7 +73,8 @@ Como os processos de audibilização exigem grande quantidade de raios a serem p
 A API permite optar por gerar os arquivos necessários para o BRASS sem precisar desenhar os raios no modelo.
 2. Na tabela a seguir os tempos de procesamento sem desenhar os raios
 
-![tempos](https://user-images.githubusercontent.com/9437020/235238074-9609ee4f-8a13-4eed-b684-a295099974db.PNG)
+![tempos](https://user-images.githubusercontent.com/9437020/236032503-6e8efb6d-1003-4413-8a40-c03b4a2ece68.PNG)
+
 
 ## Limitações:
 1. Nesta versão, o usuário pode posicionar a fonte e a cabeça livremente no plano XY, mas as alturas foram definidas em 1.20m e 1.80m respectivamente.
