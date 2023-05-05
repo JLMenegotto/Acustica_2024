@@ -5,11 +5,12 @@ Acustica2024.dll é um aplicativo para Revit v.2024 desenvolvido no Departamento
 ![RAIOS6000](https://user-images.githubusercontent.com/9437020/235116960-2306a9f9-e3fb-4e65-9eb4-82d0fb5b5e5c.PNG)
 
 ## Funcionalidade da API:
-A API faz a leitura de um modelo BIM criado em Revit v. 2024 para gerar informações que o sistema BRASS precisa para gerar a simulação sonora de salas (audibilização). O processo é iniciado pelo posicionamento de uma fonte sonora e um receptor (cabeça).É efetuada uma operação de traçado de raios que partem de uma fonte sonora omnidirecional com valor de enegia = 1. Os raios percorrem a sala refletindo nas superfícies e perdendo energia de acordo aos coeficientes de absorção acústica dos materiais que atingem. A percepção sonora vai depender da posição definida para a cabeça. O processo gera 4 arquivos:
+A API faz a leitura de um modelo BIM criado em Revit v. 2024 para gerar informações que o sistema BRASS precisa para gerar a simulação sonora de salas (audibilização). O processo é iniciado pelo posicionamento de uma fonte sonora e um receptor (cabeça). É efetuada a operação de traçado de raios que partem da fonte sonora omnidirecional com valor de enegia = 1. Os raios percorrem a sala refletindo nas superfícies e perdendo energia de acordo aos coeficientes de absorção acústica dos materiais que atingem. A percepção sonora vai depender da posição definida para a cabeça. O processo gera 5 arquivos:
 
 1. **RAYS-S00N-R001.JSON:**  Arquivo estruturado em JSON com os dados do campo acústico da sala, ou seja, com todos os raios sonoros que saíram da fonte e todas as reflexões com as perdas de energia sonora calculadas para nove bandas de frequência (63, 125, 250, 500, 1K, 2K, 4K, 8K, 16K).
 2. **RAYS-S00N-R001.TXT:**  Arquivo que contem apenas os raios e reflexões que passaram pela posição da cabeça, ou seja, os raios que têm influência na percepção acústica de um ouvinte posicionado nesse ponto da sala.
-3. **NomeSala_Simulada.BAT:**  Arquivo Bat para executar o BRASS e fazer a leitura e o cálculo de audibilização a partir dos dados fornecidos pelo arquivo de raios (TXT). O retorno do processo são arquivos WAV com o resultado da audibilização.
+2. **T_RAYS-S00N-R001.TXT:**  Arquivo que contem todos os raios e reflexões da sala.
+3. **NomeSala_Simulada.BAT:** Arquivo Bat para executar o BRASS e fazer a leitura e o cálculo de audibilização a partir dos dados fornecidos pelo arquivo de raios (TXT). O retorno do processo são arquivos WAV com o resultado da audibilização.
 4. **NomeSala_Simulada.TXT:**  Arquivo TXT com outros parâmetros necessários para o BRASS realizar o processo de audibilização.
                                
 ## Instalação:
@@ -56,7 +57,7 @@ Exemplo:  A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto
  5. Quantidade de reflexões a calcular.
  6. Número da fonte sonora utilizada, (valor N em `RAYS-S00N-R001)`. Utilizado para nomear e diferenciar os arquivos JSON e TXT com os raios que partem de cada fonte sonora.
 
-Para os campos 4,5 e 6 Ingressar o valor e Pressionar Enter ou clicar no ícone do enter do campo.
+Para os campos 4, 5 e 6 Ingressar o valor e Pressionar Enter ou clicar no ícone do enter do campo.
 
  5. Na linha de Status de Revit serão informadas as interações processadas. Os raios desenhados utilizam a cor amarela que vai sendo clareada e afinada segundo as perdas de energia de cada reflexão. 
  Foi preparada uma gradação de 5 níveis deferenciados de cor e espessura de linha.
