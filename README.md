@@ -1,7 +1,9 @@
 # Acustica2024.dll
 
-Acustica2024.dll é um aplicativo em contínuo desenvolvimento. Desenvolvido no Departamento de Expressão Gráfica da Escola Politécnica da UFRJ pelo Prof. José Luis Menegotto. 
-O objetivo da API é fazer interface com o simulador sonoro BRASS desenvolvido pelo Prof. Julio Cesar Boscher Torres. A da API para Revit atualmente publicada funciona em Revit v.2024.
+Acustica2024.dll é um aplicativo para Revit desenvolvido no Departamento de Expressão Gráfica da Escola Politécnica da UFRJ pelo Prof. José Luis Menegotto. 
+O objetivo da API é fazer interface com o simulador sonoro BRASS desenvolvido pelo Prof. Julio Cesar Boscher Torres. 
+A versão da API atualmente publicada funciona em Revit 2024 e tem algumas diferenças em relação à API desenvolvida em 2018.
+https://periodicos.sbu.unicamp.br/ojs/index.php/parc/article/view/8653934
 
 ![RAIOS6000](https://user-images.githubusercontent.com/9437020/235116960-2306a9f9-e3fb-4e65-9eb4-82d0fb5b5e5c.PNG)
 
@@ -41,12 +43,14 @@ A API faz a leitura de um modelo BIM criado em Revit 2024 para gerar informaçõ
       * S001-R001.WAV  (resultado da posição da fonte 1 usando o Piano) 
       * S002-R001.WAV  (resultado da posição da fonte 2 usando o Oboé) 
       * SALL-R001.WAV  a combinação da fonte 1 e 2 com Piano e Oboé.
-4. Na pasta **Ico** colocar os arquivos png da interface 
+      
+4. Na pasta **Ico** colocar os icones gráficos da interface. 
 
 ## Preparação do Modelo em Revit:
- 1. A sala simulada deve ter um objeto ambiente inserido com o nome do compartimento definido, pois esse valor definirá o nome dos arquivos BAT e TXT. 
- 2. Os materiais devem ter o parâmetro **MARK** definido e cadastrado no arquivo **Acustica_Coeficientes.TXT**. 
- Esse arquivo contem os valores dos coeficientes de absorção acústica dos materiais usados na sala divididos em 9 bandas de frequência.
+
+ 1. A sala simulada deve ter um objeto ambiente inserido com o nome do compartimento definido, pois esse valor definirá o prefixo dos arquivos BAT e TXT.
+ 2. Os materiais usados no modelo devem ter o parâmetro **MARK** definido e cadastrado no arquivo **Acustica_Coeficientes.TXT**. 
+ Esse arquivo contem os valores dos coeficientes de absorção acústica dos materiais da sala divididos em 9 bandas de frequência.
  Consultar com os fornecedores dos materiais para obter esses valores. Cada linha do arquivo corresponde a um material. 
  O arquivo é fornecido com alguns valores para testagem.
  O primeiro dado textual é o código do material que deve ser associado ao parâmetro MARK.
