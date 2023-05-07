@@ -1,11 +1,12 @@
 # Acustica2024.dll
 
-Acustica2024.dll é um aplicativo para Revit v.2024 desenvolvido no Departamento de Expressão Gráfica da Escola Politécnica da UFRJ pelo Prof. José Luis Menegotto. O objetivo da API é fazer interface com o simulador sonoro BRASS desenvolvido pelo Prof. Julio Cesar Boscher Torres.
+Acustica2024.dll é um aplicativo em contínuo desenvolvimento. Desenvolvido no Departamento de Expressão Gráfica da Escola Politécnica da UFRJ pelo Prof. José Luis Menegotto. 
+O objetivo da API é fazer interface com o simulador sonoro BRASS desenvolvido pelo Prof. Julio Cesar Boscher Torres. A da API para Revit atualmente publicada funciona em Revit v.2024.
 
 ![RAIOS6000](https://user-images.githubusercontent.com/9437020/235116960-2306a9f9-e3fb-4e65-9eb4-82d0fb5b5e5c.PNG)
 
 ## Funcionalidade da API:
-A API faz a leitura de um modelo BIM criado em Revit v. 2024 para gerar informações que o sistema BRASS precisa para gerar a simulação sonora de salas (audibilização). O processo é iniciado pelo posicionamento de uma fonte sonora e um receptor (cabeça). É efetuada a operação de traçado de raios que partem da fonte sonora omnidirecional com valor de enegia = 1. Os raios percorrem a sala refletindo nas superfícies e perdendo energia de acordo aos coeficientes de absorção acústica dos materiais que atingem. A percepção sonora vai depender da posição definida para a cabeça. O processo gera 5 arquivos:
+A API faz a leitura de um modelo BIM criado em Revit 2024 para gerar informações que o sistema BRASS precisa para gerar a simulação sonora de salas (audibilização). O processo é iniciado pelo posicionamento de uma fonte sonora e um receptor (cabeça). É efetuada a operação de traçado de raios que partem da fonte sonora omnidirecional com valor de enegia = 1. Os raios percorrem a sala refletindo nas superfícies e perdendo energia de acordo aos coeficientes de absorção acústica dos materiais que atingem. A percepção sonora vai depender da posição definida para a cabeça. O processo gera 5 arquivos:
 
 1. **RAYS-S00N-R001.JSON:**  Arquivo estruturado em JSON com os dados do campo acústico da sala, ou seja, com todos os raios sonoros que saíram da fonte e todas as reflexões com as perdas de energia sonora calculadas para nove bandas de frequência (63, 125, 250, 500, 1K, 2K, 4K, 8K, 16K).
 2. **RAYS-S00N-R001.TXT:**  Arquivo que contem apenas os raios e reflexões que passaram pela posição da cabeça, ou seja, os raios que têm influência na percepção acústica de um ouvinte posicionado nesse ponto da sala.
@@ -19,7 +20,7 @@ A API faz a leitura de um modelo BIM criado em Revit v. 2024 para gerar informa�
       * **C:\APIBIM\Acustica**
       * **C:\APIBIM\Acustica\Ico**
       * **C:\APIBIM\Acustica\Som**
-      * **C:\APIBIM\Acustica\Brass*  
+      * **C:\APIBIM\Acustica\Brass**   
     
  2. Copiar o arquivo **2024_Acustica.addin** para a pasta **C:\ProgramData\Autodesk\Revit\Addins\2024**
  
