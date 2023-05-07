@@ -14,9 +14,14 @@ A API faz a leitura de um modelo BIM criado em Revit v. 2024 para gerar informa�
 4. **NomeSala_Simulada.TXT:**  Arquivo TXT com outros parâmetros necessários para o BRASS realizar o processo de audibilização.
                                
 ## Instalação:
- 1. Descompactar para a pasta **C:\APIBIM\Acustica**
+ 1. Criar as pastas 
+    **C:\APIBIM\Acustica**
+    **C:\APIBIM\Acustica\Ico**
+    **C:\APIBIM\Acustica\Som**
+    **C:\APIBIM\Acustica\Brass**
+    
  2. Copiar o arquivo **2024_Acustica.addin** para a pasta **C:\ProgramData\Autodesk\Revit\Addins\2024**
- 3. Na pasta **Som** há arquivos Waves Mono com sons anecóicos usados como base sonora para a realizar a audibilização em Brass. 
+ 3. Na pasta **Som** colocar os arquivos Waves Mono com sons anecóicos usados como base sonora para a realizar a audibilização em Brass. 
     O resultado será a criação de arquivos Wav estéreo independentes e combionados.
  
       * Soprano.wav: soprano realizando um exercício vocal com uma escala de alturas. 
@@ -29,6 +34,7 @@ A API faz a leitura de um modelo BIM criado em Revit v. 2024 para gerar informa�
       * S001-R001.WAV  (resultado da posição da fonte 1 usando o Piano) 
       * S002-R001.WAV  (resultado da posição da fonte 2 usando o Oboé) 
       * SALL-R001.WAV  a combinação da fonte 1 e 2 com Piano e Oboé.
+4. Na pasta **Ico** colocar os arquivos png da interface 
 
 ## Preparação do Modelo em Revit:
  1. A sala simulada deve ter um objeto ambiente inserido com o nome do compartimento definido, pois esse valor definirá o nome dos arquivos BAT e TXT. 
