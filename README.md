@@ -45,9 +45,10 @@ A API faz a leitura de um modelo BIM criado em Revit 2024 para gerar informaçõ
 
 ## Preparação do Modelo em Revit:
  1. A sala simulada deve ter um objeto ambiente inserido com o nome do compartimento definido, pois esse valor definirá o nome dos arquivos BAT e TXT. 
- 2. Os materiais devem ter o parâmetro MARK definido e cadastrado no arquivo Acustica_Coeficientes.TXT.
+ 2. Os materiais devem ter o parâmetro **MARK** definido e cadastrado no arquivo **Acustica_Coeficientes.TXT**. 
  Esse arquivo contem os valores dos coeficientes de absorção acústica dos materiais usados na sala divididos em 9 bandas de frequência.
- Consultar com os fornecedores dos materiais para obter esses valores. Cada linha do arquivo corresponde a um material.
+ Consultar com os fornecedores dos materiais para obter esses valores. Cada linha do arquivo corresponde a um material. 
+ O arquivo é fornecido com alguns valores para testagem.
  O primeiro dado textual é o código do material que deve ser associado ao parâmetro MARK.
 
 Exemplo: **A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto**
@@ -55,8 +56,8 @@ Exemplo: **A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto**
 ![Materiais](https://user-images.githubusercontent.com/9437020/235194809-edbf0873-caee-476c-9103-f7472fd9e6cd.PNG)
 
  1. A API processa as faces atingidas pelos raios. Foram testadas as familias de sistema de Piso, Parede, Forros e Partes. Elas podem estar agrupadas. 
- 2. As famílias de componentes que estejam dentro da sala estudada (cadeiras, refletores ou baffles acústicos, etc.) devem ter um parâmetro instanciado
-    cujo nome possua a palavra "Material" (p.ex. "Material_Acustico") que permita à API filtrar e alocar o material utilizado.
+ 2. As famílias de componentes que estejam dentro da sala estudada (cadeiras, refletores ou baffles acústicos, etc.) devem ter um parâmetro **instanciado**
+    cujo nome possua a palavra "Material" (p.ex. "Material_Acustico", "Material_Frame"...) que permita à API filtrar e alocar o material utilizado.
 
 ![Familia](https://user-images.githubusercontent.com/9437020/235192990-612e1f3e-1af5-45c0-befa-a70cbd703047.PNG)
   
@@ -73,7 +74,7 @@ Exemplo: **A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto**
 Para os campos 4, 5 e 6 Ingressar o valor e Pressionar Enter ou clicar no ícone do enter do campo.
 
  5. Na linha de Status de Revit serão informadas as interações processadas. Os raios desenhados utilizam a cor amarela que vai sendo clareada e afinada segundo as perdas de energia de cada reflexão. 
- Foi preparada uma gradação de 5 níveis deferenciados de cor e espessura de linha.
+ Foi preparada uma gradação de 5 níveis diferenciados de cor e espessura de linha.
 
 ![contador](https://user-images.githubusercontent.com/9437020/235193199-33ac6d83-b916-4ef3-aa39-495c9d87b74e.png)
 
