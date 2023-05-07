@@ -50,7 +50,7 @@ A API faz a leitura de um modelo BIM criado em Revit 2024 para gerar informaçõ
  Consultar com os fornecedores dos materiais para obter esses valores. Cada linha do arquivo corresponde a um material.
  O primeiro dado textual é o código do material que deve ser associado ao parâmetro MARK.
 
-Exemplo:  A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto
+Exemplo: **A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto**
 
 ![Materiais](https://user-images.githubusercontent.com/9437020/235194809-edbf0873-caee-476c-9103-f7472fd9e6cd.PNG)
 
