@@ -14,11 +14,12 @@ A API faz a leitura de um modelo BIM criado em Revit v. 2024 para gerar informa�
 4. **NomeSala_Simulada.TXT:**  Arquivo TXT com outros parâmetros necessários para o BRASS realizar o processo de audibilização.
                                
 ## Instalação:
- 1. Criar as pastas 
-**C:\APIBIM\Acustica**
-**C:\APIBIM\Acustica\Ico**
-**C:\APIBIM\Acustica\Som**
-**C:\APIBIM\Acustica\Brass**
+ 1. Criar as pastas
+ 
+      * C:\APIBIM\Acustica**
+      * C:\APIBIM\Acustica\Ico**
+      * C:\APIBIM\Acustica\Som**
+      * C:\APIBIM\Acustica\Brass**
     
  2. Copiar o arquivo **2024_Acustica.addin** para a pasta **C:\ProgramData\Autodesk\Revit\Addins\2024**
  3. Na pasta **Som** colocar os arquivos Waves Mono com sons anecóicos usados como base sonora para a realizar a audibilização em Brass. 
