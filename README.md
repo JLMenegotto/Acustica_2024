@@ -19,11 +19,16 @@ A API faz a leitura de um modelo BIM criado em Revit v. 2024 para gerar informa�
       * **C:\APIBIM\Acustica**
       * **C:\APIBIM\Acustica\Ico**
       * **C:\APIBIM\Acustica\Som**
-      * **C:\APIBIM\Acustica\Brass**
+      * **C:\APIBIM\Acustica\Brass*  
     
  2. Copiar o arquivo **2024_Acustica.addin** para a pasta **C:\ProgramData\Autodesk\Revit\Addins\2024**
- 3. Na pasta **Som** colocar os arquivos Waves Mono com sons anecóicos usados como base sonora para a realizar a audibilização em Brass. 
-    O resultado será a criação de arquivos Wav estéreo independentes e combionados.
+ 
+ Caso decida instalar a API numa outra pasta da sua preferência, deverá alterar o caminho presente no conteúdo do arquivo Acustica_2024.addin
+ 
+ ![Addin](https://user-images.githubusercontent.com/9437020/236694667-1af4dff9-9dda-48c6-8017-9f7ed62e205f.PNG)
+  
+ 3. Na pasta **Som** devem estar os arquivos Waves Mono com sons anecóicos usados como base sonora para a realizar a audibilização em Brass. 
+    O resultado será a criação de arquivos Wav estéreo independentes e combinados.
  
       * Soprano.wav: soprano realizando um exercício vocal com uma escala de alturas. 
       * Piano1.wav:  tocando uma escala ascendente e descendente.
