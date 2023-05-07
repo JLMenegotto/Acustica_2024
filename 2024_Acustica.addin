@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+        <Assembly>C:\APIBIM\Acustica\Acustica2024.dll</Assembly>
+	<AddInId>2EA05A7A-E9BA-4616-B485-182206821D07</AddInId>
+	<FullClassName>Acustica.Acustica2024</FullClassName>
+        <Text>Acustica</Text>
+        <VisibilityMode>AlwaysVisible</VisibilityMode>
+	<VendorId>JLM</VendorId>
+	<VendorDescription>JLM_UFRJ</VendorDescription>
+	</AddIn>
+</RevitAddIns>
