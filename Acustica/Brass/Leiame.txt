@@ -1,2 +1,2 @@
 
-Na pasta Brass serão colocados os arquivos gerados pela API que serão rodados posteriormente pelo Brass
+Na pasta Brass são colocados os arquivos gerados pela API que serão rodados posteriormente pelo Brass
