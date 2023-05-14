@@ -62,8 +62,9 @@ Exemplo: **A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto**
  1. A API processa as faces atingidas pelos raios. Foram testadas as familias de sistema de Piso, Parede, Forros e Partes. Elas podem estar agrupadas. 
  2. As famílias de componentes que estejam dentro da sala estudada (cadeiras, refletores ou baffles acústicos, etc.) devem ter um parâmetro **instanciado**
     cujo nome possua a palavra "Material" (p.ex. "Material_Acustico", "Material_Frame"...) que permita à API filtrar e alocar o material utilizado.
+    
+![Materiais00](https://github.com/JLMenegotto/Acustica_2024/assets/9437020/576dd36e-191f-4d97-8567-4b3e4b1107ec)
 
-![Familia](https://user-images.githubusercontent.com/9437020/235192990-612e1f3e-1af5-45c0-befa-a70cbd703047.PNG)
   
 ## Interface:
 ![Interface](https://user-images.githubusercontent.com/9437020/235352580-44726e4d-9f58-4e51-867b-8c1738b936bd.PNG)
