@@ -5,6 +5,8 @@ O objetivo da API é fazer interface com o simulador sonoro BRASS desenvolvido p
 A versão da API atualmente publicada funciona em Revit 2024 e tem algumas diferenças em relação à API desenvolvida em 2018.
 https://periodicos.sbu.unicamp.br/ojs/index.php/parc/article/view/8653934
 
+A aplicação pode ser controlada na interface gráfica GUI assim como executada por comandos de voz VUI
+
 ![RAIOS6000](https://user-images.githubusercontent.com/9437020/235116960-2306a9f9-e3fb-4e65-9eb4-82d0fb5b5e5c.PNG)
 
 ## Funcionalidade da API:
