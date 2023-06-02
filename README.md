@@ -26,6 +26,10 @@ A API faz a leitura de um modelo BIM criado em Revit 2024 para gerar informaçõ
       * **C:\APIBIM\Acustica\Lex**  
       * **C:\APIBIM\Acustica\Loc**     
     
+   Os arquivos **Acustica2024.dll** e **Parla_2024.dll** devem ser colocados dentro da pasta **C:\APIBIM\Acustica**
+   O dll as funções de Speech Recognition que estão em **Parla_2024.dll** dependerão do sistema ter ativado um driver 
+   de reconhecimento de fala em espanhol.
+   
  2. Copiar o arquivo **2024_Acustica.addin** para a pasta **C:\ProgramData\Autodesk\Revit\Addins\2024**
  
  Caso decida instalar a API numa outra pasta da sua preferência, deverá alterar o caminho presente no conteúdo do arquivo Acustica_2024.addin
