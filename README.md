@@ -22,7 +22,9 @@ A API faz a leitura de um modelo BIM criado em Revit 2024 para gerar informaçõ
       * **C:\APIBIM\Acustica**
       * **C:\APIBIM\Acustica\Ico**
       * **C:\APIBIM\Acustica\Som**
-      * **C:\APIBIM\Acustica\Brass**   
+      * **C:\APIBIM\Acustica\Brass**
+      * **C:\APIBIM\Acustica\Lex**  
+      * **C:\APIBIM\Acustica\Loc**     
     
  2. Copiar o arquivo **2024_Acustica.addin** para a pasta **C:\ProgramData\Autodesk\Revit\Addins\2024**
  
@@ -45,6 +47,8 @@ A API faz a leitura de um modelo BIM criado em Revit 2024 para gerar informaçõ
       * SALL-R001.WAV  a combinação da fonte 1 e 2 com Piano e Oboé.
       
 4. Na pasta **Ico** colocar os icones gráficos da interface. 
+5. Na pasta **Lex** colocar o arquivo Lexico_Acustica_2024.xlsx que contém a estrutura lexical da interface VUI
+6. Na pasta **Loc** pode ser deixada vazia. Ao rodar a função será criada a gramática Locuções.XML automaticamente.
 
 ## Preparação do Modelo em Revit:
 
