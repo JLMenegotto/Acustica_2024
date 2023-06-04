@@ -78,9 +78,10 @@ Exemplo: **A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto**
     
 ![Materiais00](https://github.com/JLMenegotto/Acustica_2024/assets/9437020/576dd36e-191f-4d97-8567-4b3e4b1107ec)
 
-3. É importante que ao fazer o cálculo acústico da sala, as superfícies atingidas fiquem estritamente dentro do volume do compartimento. Por exemplo, se uma parede é modelada
-entre o piso e a laje superior e o compartimento tiver um forro rebaixado, então o acabamento da parede deverá terminar embaixo do forro. Para isso, utilizar o comando
-(Parts) que permite dividir as diversas camadas de materiais da parede. A camada de acabamento deverá ser dividida na altura do forro.
+3. Ao fazer o cálculo acústico da sala, é importante que as superfícies atingidas pelos raios estejam estritamente dentro do volume do compartimento. 
+Por exemplo, se uma parede é modelada entre o piso e a laje superior e o compartimento tiver um forro rebaixado, então o acabamento da parede deverá 
+terminar embaixo do forro. Para isso, utilizar o comando (Parts) que permite dividir as diversas camadas de materiais da parede. A camada de acabamento 
+deverá ser dividida na altura do forro.
   
 ## Interface:
 ![Interface](https://user-images.githubusercontent.com/9437020/235352580-44726e4d-9f58-4e51-867b-8c1738b936bd.PNG)
