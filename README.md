@@ -10,7 +10,8 @@ A aplicação pode ser controlada na interface gráfica GUI assim como executada
 ![RAIOS6000](https://user-images.githubusercontent.com/9437020/235116960-2306a9f9-e3fb-4e65-9eb4-82d0fb5b5e5c.PNG)
 
 ## Funcionalidade da API:
-A API faz a leitura de um modelo BIM criado em Revit 2024 para gerar informações que o sistema BRASS precisa para gerar a simulação sonora de salas (audibilização). O processo é iniciado pelo posicionamento de uma fonte sonora e um receptor (cabeça). É efetuada a operação de traçado de raios que partem da fonte sonora omnidirecional com valor de enegia = 1. Os raios percorrem a sala refletindo nas superfícies e perdendo energia de acordo aos coeficientes de absorção acústica dos materiais que atingem. A percepção sonora vai depender da posição definida para a cabeça. O processo gera 5 arquivos:
+A API faz a leitura de um modelo BIM criado em Revit 2024 para gerar as informações que o sistema BRASS precisa para gerar a simulação sonora de salas (audibilização). O processo é iniciado pelo posicionamento de uma fonte sonora e um receptor (cabeça). É efetuada a operação de traçado de raios que partem da fonte sonora omnidirecional com valor de enegia = 1. Os raios percorrem a sala refletindo nas superfícies e perdendo energia de acordo aos coeficientes de absorção acústica dos materiais que atingem. A percepção sonora vai depender da somatória de energias que passem pela posição definida para a cabeça. 
+O processo gera 5 arquivos:
 
 1. **RAYS-S00N-R001.JSON:**  Arquivo estruturado em JSON com os dados do campo acústico da sala, ou seja, com todos os raios sonoros que saíram da fonte e todas as reflexões com as perdas de energia sonora calculadas para nove bandas de frequência (63, 125, 250, 500, 1K, 2K, 4K, 8K, 16K).
 2. **RAYS-S00N-R001.TXT:**  Arquivo que contem apenas os raios e reflexões que passaram pela posição da cabeça, ou seja, os raios que têm influência na percepção acústica de um ouvinte posicionado nesse ponto da sala.
@@ -77,6 +78,9 @@ Exemplo: **A02 0.03 0.03 0.03 0.04 0.10 0.19 0.35 0.35 0.35 - BlocoConcreto**
     
 ![Materiais00](https://github.com/JLMenegotto/Acustica_2024/assets/9437020/576dd36e-191f-4d97-8567-4b3e4b1107ec)
 
+3. É importante que ao fazer o cálculo acústico da sala, as superfícies atingidas fiquem estritamente dentro do volume do compartimento. Por exemplo, se uma parede é modelada
+entre o piso e a laje superior e o compartimento tiver um forro rebaixado, então o acabamento da parede deverá terminar embaixo do forro. Para isso, utilizar o comando
+(Parts) que permite dividir as diversas camadas de materiais da parede. A camada de acabamento deverá ser dividida na altura do forro.
   
 ## Interface:
 ![Interface](https://user-images.githubusercontent.com/9437020/235352580-44726e4d-9f58-4e51-867b-8c1738b936bd.PNG)
