@@ -1,8 +1,8 @@
 ## Acustica2024.dll
 <sub> **_Prof. José Luis Menegotto._**</sub> 
-  + * <sub> **_DEG/POLI/UFRJ. Escola Politécnica da UFRJ._**</sub>
-  + * <sub> _PEU Programa de Pós-graduação em Engenharia Urbana_</sub>
-  + * <sub> _PPE Programa de Pós-graduação em Estruturas_</sub>
+    * <sub> **_DEG/POLI/UFRJ. Escola Politécnica da UFRJ._**</sub>
+    * <sub> _PEU Programa de Pós-graduação em Engenharia Urbana_</sub>
+    * <sub> _PPE Programa de Pós-graduação em Estruturas_</sub>
 
 Acustica2024.dll é um aplicativo para Revit desenvolvido no Departamento de Expressão Gráfica da Escola Politécnica da UFRJ pelo Prof. José Luis Menegotto. 
 O objetivo da API é fazer interface com o simulador acústico BRASS desenvolvido pelo Prof. Julio Cesar Boscher Torres. 
