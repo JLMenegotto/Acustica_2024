@@ -1,4 +1,8 @@
-# Acustica2024.dll
+## Acustica2024.dll
+<sub> **_Prof. José Luis Menegotto._**</sub> 
++ <sub> **_DEG/POLI/UFRJ. Escola Politécnica da UFRJ._**</sub>
++ <sub> _PEU Programa de Pós-graduação em Engenharia Urbana_</sub>
++ <sub> _PPE Programa de Pós-graduação em Estruturas_</sub>
 
 Acustica2024.dll é um aplicativo para Revit desenvolvido no Departamento de Expressão Gráfica da Escola Politécnica da UFRJ pelo Prof. José Luis Menegotto. 
 O objetivo da API é fazer interface com o simulador acústico BRASS desenvolvido pelo Prof. Julio Cesar Boscher Torres. 
@@ -9,7 +13,7 @@ A aplicação pode ser controlada na interface gráfica GUI assim como executada
 
 ![RAIOS6000](https://user-images.githubusercontent.com/9437020/235116960-2306a9f9-e3fb-4e65-9eb4-82d0fb5b5e5c.PNG)
 
-## Funcionalidade da API:
+### Funcionalidade da API:
 A API faz a leitura de um modelo BIM criado em Revit 2024 para gerar as informações que o sistema BRASS precisa para gerar a simulação sonora de salas (audibilização). O processo é iniciado pelo posicionamento de uma fonte sonora e um receptor (cabeça). É efetuada a operação de traçado de raios que partem da fonte sonora omnidirecional com valor de enegia = 1. Os raios percorrem a sala refletindo nas superfícies e perdendo energia de acordo aos coeficientes de absorção acústica dos materiais que atingem. A percepção sonora vai depender da somatória de energias que passem pela posição definida para a cabeça. 
 O processo gera 5 arquivos:
 
@@ -19,7 +23,7 @@ O processo gera 5 arquivos:
 3. **NomeSala_Simulada.BAT:** Arquivo Bat para executar o BRASS e fazer a leitura e o cálculo de audibilização a partir dos dados fornecidos pelo arquivo de raios (TXT). O retorno do processo são arquivos WAV com o resultado da audibilização.
 4. **NomeSala_Simulada.TXT:**  Arquivo TXT com outros parâmetros necessários para o BRASS realizar o processo de audibilização.
                                
-## Instalação:
+### Instalação:
  1. Criar as pastas
  
       * **C:\APIBIM\Acustica**
@@ -59,7 +63,7 @@ O processo gera 5 arquivos:
 5. Na pasta **Lex** colocar o arquivo Lexico_Acustica_2024.xlsx que contém a estrutura lexical da interface VUI
 6. Na pasta **Loc** pode ser deixada vazia. Ao rodar a função será criada a gramática Locuções.XML automaticamente.
 
-## Preparação do Modelo em Revit:
+### Preparação do Modelo em Revit:
 
  1. A sala simulada deve ter um objeto ambiente inserido com o nome do compartimento definido, pois esse valor definirá o prefixo dos arquivos BAT e TXT.
  2. Os materiais usados no modelo devem ter o parâmetro **MARK** definido e cadastrado no arquivo **Acustica_Coeficientes.TXT**. 
@@ -84,7 +88,7 @@ Por exemplo, se uma parede é modelada entre o piso e a laje superior e o compar
 terminar embaixo do forro. Para isso, utilizar o comando (Parts) que permite dividir as diversas camadas de materiais da parede. A camada de acabamento 
 deverá ser dividida na altura do forro.
   
-## Interface:
+### Interface:
 ![Interface](https://user-images.githubusercontent.com/9437020/235352580-44726e4d-9f58-4e51-867b-8c1738b936bd.PNG)
 
  1. Botão de executar o processo de traçado de raios.
@@ -101,12 +105,12 @@ Para os campos 4, 5 e 6 Ingressar o valor e Pressionar Enter ou clicar no ícone
 
 ![contador](https://user-images.githubusercontent.com/9437020/235193199-33ac6d83-b916-4ef3-aa39-495c9d87b74e.png)
 
-## Estilos:
+### Estilos:
 1. A API incorpora 3 estilos de linha ao arquivo do modelo RVT. Eles têm as seguintes características:
 
 ![Estilos](https://user-images.githubusercontent.com/9437020/235129574-902e4f05-dd74-4636-836d-337d615d3aef.PNG)
 
-## Desempenho:
+### Desempenho:
 1. Os valores de processamento a seguir foram obtidos rodando a API em um notebook Inspiron com processador I7, 8GB de RAM e disco SSD 1T com placa de video Onboard.
 Como os processos de audibilização exigem grande quantidade de raios a serem processados, há um impacto para o processamento gráfico em Revit. 
 A API permite optar por gerar os arquivos necessários para o BRASS sem precisar desenhar os raios no modelo.
@@ -115,12 +119,12 @@ A API permite optar por gerar os arquivos necessários para o BRASS sem precisar
 ![tempos](https://user-images.githubusercontent.com/9437020/236032503-6e8efb6d-1003-4413-8a40-c03b4a2ece68.PNG)
 
 
-## Limitações:
+### Limitações:
 1. Nesta versão, o usuário pode posicionar a fonte e a cabeça livremente no plano XY, mas as alturas foram definidas em 1.20m e 1.80m respectivamente.
 2. O aplicativo deve ser rodado numa vista 3D de Revit.
 3. A sala deve estar modelada de modo a não deixar frestas que permitam os raios serem lançados ao vazio. 
 
-## Publicação:
+### Publicação:
 Para aprofundar no assunto consulte a seguinte publicação.
 
 https://periodicos.sbu.unicamp.br/ojs/index.php/parc/article/view/8653934
