@@ -153,4 +153,3 @@ https://periodicos.sbu.unicamp.br/ojs/index.php/parc/article/view/8653934
 
 ![capa](https://github.com/JLMenegotto/AulasBIM/assets/9437020/b6f1b49d-24e5-4588-b52f-d93869d3784b)
 
-![ImagemGitHub](https://user-images.githubusercontent.com/9437020/177049848-57bfaae6-9411-4095-af6b-12efc9f28616.PNG)
