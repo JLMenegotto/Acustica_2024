@@ -86,7 +86,8 @@ terminar embaixo do forro. Para isso, utilizar o comando (Parts) que permite div
 deverá ser dividida na altura do forro.
   
 ### Interface:
-![Interface](https://user-images.githubusercontent.com/9437020/235352580-44726e4d-9f58-4e51-867b-8c1738b936bd.PNG)
+
+![Acustica_2024_Interface](https://github.com/user-attachments/assets/9ff1b1b2-2cd4-482f-bc24-5bbc356a646c)
 
  1. Botão de executar o processo de traçado de raios.
  2. Botão para a leitura do campo acústico (Em desenvolvimento...).
